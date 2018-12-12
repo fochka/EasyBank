@@ -17,6 +17,6 @@ namespace EasyBank
             InitializeComponent();
         }
 
-
+        //win
     }
 }
