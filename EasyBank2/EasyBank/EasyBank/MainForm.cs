@@ -10,6 +10,7 @@ using System.Windows.Forms;
 
 //Design
 //Skelet
+//Comment
 namespace EasyBank
 {
     public partial class MainForm : Form
