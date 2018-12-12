@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 
 //Design
+//Skelet
 namespace EasyBank
 {
     public partial class MainForm : Form
