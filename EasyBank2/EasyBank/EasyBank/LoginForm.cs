@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
+//Design
 namespace EasyBank
 {
     public partial class LoginForm : Form
@@ -17,6 +18,6 @@ namespace EasyBank
             InitializeComponent();
         }
 
-        //win
+       
     }
 }
