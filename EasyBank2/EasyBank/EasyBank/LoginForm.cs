@@ -18,6 +18,6 @@ namespace EasyBank
             InitializeComponent();
         }
 
-      //2
+      //12
     }
 }
