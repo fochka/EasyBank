@@ -7,7 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-
+//1
 namespace EasyBank
 {
     public partial class InvestsForm : Form
