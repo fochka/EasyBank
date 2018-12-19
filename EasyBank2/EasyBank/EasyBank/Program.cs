@@ -10,7 +10,7 @@ namespace EasyBank
     {
         static double Calc(int time, double percent, bool month)
         {
-            double dengi = 1;
+            double money = 1;
             if (month)
             {
                 for (int i = 0; i < time; i++)
