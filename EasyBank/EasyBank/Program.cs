@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace EasyBank
-{//mhvd1
+{//mhvd13
     static class Calculate
     {
         static double Calc(int time, double percent, bool month)
