@@ -8,30 +8,31 @@ namespace EasyBank
 {
     static class Calculate
     {
-        static double Calc(int vrem, double procent, bool mesac)
+        static double Calc(int time, double percent, bool month)
         {
             double dengi = 1;
-            if (mesac)
+            if (month)
             {
-                for (int k = 0; k < vrem; k++)
+                for (int i = 0; i < time; i++)
                 {
-                    dengi = dengi * procent * 0.01;
+                    money = money + Convert.ToInt32(Math.Round(money * percent * 0.01));
                 }
             }
             else
             {
-                for(int k = 0; k < vrem; k+=12)
+                time = time / 12;
+                for (int i = 0; i < time; i++)
                 {
-                    dengi = dengi * procent * 0.01;
+                    money = money + Convert.ToInt32(Math.Round(money * percent * 0.01));
                 }
             }
-            return (dengi);
+            return (money);
         }
     }
     static class Program
     {
         /// <summary>
-        /// Главная точка входа для приложения.123123
+        /// Главная точка входа для приложения.123123123
         /// </summary>
         [STAThread]
         static void Main()
