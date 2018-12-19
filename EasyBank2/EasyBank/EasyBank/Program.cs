@@ -8,24 +8,24 @@ namespace EasyBank
 {
     static class Calculate
     {
-        static double Calc(int time, double percent, bool month)
+        static double Calc(int vrem, double procent, bool mesac)
         {
-            double money = 1;
-            if (month)
+            double dengi = 1;
+            if (mesac)
             {
-                for (int i = 0; i < time; i++)
+                for (int k = 0; k < vrem; k++)
                 {
-                    money=money*percent*0.01;
+                    dengi = dengi * procent * 0.01;
                 }
             }
             else
             {
-                for(int i = 0; i < time; i+=12)
+                for(int k = 0; k < vrem; k+=12)
                 {
-                    money = money * percent * 0.01;
+                    dengi = dengi * procent * 0.01;
                 }
             }
-            return (money);
+            return (dengi);
         }
     }
     static class Program
