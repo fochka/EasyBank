@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace EasyBank
-{//mhvd
+{
     static class Calculate
     {
         static double Calc(int vrem, double procent, bool mesac)
@@ -31,7 +31,7 @@ namespace EasyBank
     static class Program
     {
         /// <summary>
-        /// Главная точка входа для приложения.
+        /// Главная точка входа для приложения.123
         /// </summary>
         [STAThread]
         static void Main()
