@@ -10,7 +10,7 @@ namespace EasyBank
     {
         static double Calc(int time, double percent, bool month)
         {
-            double dengi = 1;
+            double money = 1;
             if (month)
             {
                 for (int i = 0; i < time; i++)
@@ -32,7 +32,7 @@ namespace EasyBank
     static class Program
     {
         /// <summary>
-        /// Главная точка входа для приложения.123123123
+        /// Главная точка входа для приложения.123123123123
         /// </summary>
         [STAThread]
         static void Main()
