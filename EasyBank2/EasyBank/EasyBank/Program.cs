@@ -21,7 +21,7 @@ namespace EasyBank
             else
             {
                 time = time / 12;
-                for (int i = 0; i < time; i++)
+                for (int j = 0; j < time; j++)
                 {
                     money = money + Convert.ToInt32(Math.Round(money * percent * 0.01));
                 }
