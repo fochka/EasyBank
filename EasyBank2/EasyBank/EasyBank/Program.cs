@@ -32,7 +32,7 @@ namespace EasyBank
     static class Program
     {
         /// <summary>
-        /// Главная точка входа для приложения.123123123123
+        /// Главная точка входа для приложения.32
         /// </summary>
         [STAThread]
         static void Main()
