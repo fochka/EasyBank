@@ -6,11 +6,11 @@ using System.Windows.Forms;
 
 namespace EasyBank
 {
-//hjkl
+
     static class Calculate
     {
-        //kxchj
-        private static double Calc(int time, double percent, bool month)
+
+        public static double Calc(int time, double percent, bool month)
         {
             double money = 1;
             if (month)
