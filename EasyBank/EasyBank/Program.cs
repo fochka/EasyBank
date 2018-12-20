@@ -8,22 +8,22 @@ namespace EasyBank
 {
     public class Calculate
     {
-        public int Calc(int time, double percent, bool month)
+        public int Calc(int period, double percent, bool month)
         {
 	    double sum = 1;
             percent = percent/100 + 1;
             if (!month)
             {
-                time = time/12;
+                period = period/12;
             }
-            sum = sum*Math.Pow(percent,time);
+            sum = sum*Math.Pow(percent,period);
             return (sum);
         }
     }
     static class Program
     {
         /// <summary>
-        /// Главная точка входа для приложения.
+        /// ГѓГ«Г ГўГ­Г Гї ГІГ®Г·ГЄГ  ГўГµГ®Г¤Г  Г¤Г«Гї ГЇГ°ГЁГ«Г®Г¦ГҐГ­ГЁГї.
         /// </summary>
         [STAThread]
         static void Main()
