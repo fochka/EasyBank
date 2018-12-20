@@ -6,6 +6,7 @@ using System.Windows.Forms;
 
 namespace EasyBank
 {
+//hjkl
     static class Calculate
     {
         //kxchj
