@@ -10,7 +10,7 @@ namespace EasyBank
     static class Calculate
     {
         //kxchj
-        static double Calc(int time, double percent, bool month)
+        private static double Calc(int time, double percent, bool month)
         {
             double money = 1;
             if (month)
