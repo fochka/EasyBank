@@ -33,6 +33,7 @@
             this.tbPassword = new System.Windows.Forms.TextBox();
             this.labeLogin = new System.Windows.Forms.Label();
             this.labelPassword = new System.Windows.Forms.Label();
+            this.lblTryAgain = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // btnEntrance
@@ -43,6 +44,7 @@
             this.btnEntrance.TabIndex = 0;
             this.btnEntrance.Text = "Войти";
             this.btnEntrance.UseVisualStyleBackColor = true;
+            this.btnEntrance.Click += new System.EventHandler(this.btnEntrance_Click);
             // 
             // tbLogin
             // 
@@ -50,6 +52,7 @@
             this.tbLogin.Name = "tbLogin";
             this.tbLogin.Size = new System.Drawing.Size(166, 20);
             this.tbLogin.TabIndex = 1;
+            this.tbLogin.Leave += new System.EventHandler(this.tbLogin_Leave);
             // 
             // tbPassword
             // 
@@ -57,6 +60,7 @@
             this.tbPassword.Name = "tbPassword";
             this.tbPassword.Size = new System.Drawing.Size(166, 20);
             this.tbPassword.TabIndex = 2;
+            this.tbPassword.UseSystemPasswordChar = true;
             // 
             // labeLogin
             // 
@@ -78,13 +82,26 @@
             this.labelPassword.TabIndex = 4;
             this.labelPassword.Text = "Пароль:";
             // 
+            // lblTryAgain
+            // 
+            this.lblTryAgain.AutoSize = true;
+            this.lblTryAgain.BackColor = System.Drawing.Color.Transparent;
+            this.lblTryAgain.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.lblTryAgain.ForeColor = System.Drawing.Color.Red;
+            this.lblTryAgain.Location = new System.Drawing.Point(111, 7);
+            this.lblTryAgain.Name = "lblTryAgain";
+            this.lblTryAgain.Size = new System.Drawing.Size(0, 13);
+            this.lblTryAgain.TabIndex = 5;
+            // 
             // LoginForm
             // 
+            this.AcceptButton = this.btnEntrance;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::EasyBank.Properties.Resources.mainFon;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.ClientSize = new System.Drawing.Size(304, 142);
+            this.Controls.Add(this.lblTryAgain);
             this.Controls.Add(this.labelPassword);
             this.Controls.Add(this.labeLogin);
             this.Controls.Add(this.tbPassword);
@@ -92,6 +109,7 @@
             this.Controls.Add(this.btnEntrance);
             this.Name = "LoginForm";
             this.Text = "Easy Bank";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.LoginForm_FormClosing);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -104,6 +122,7 @@
         private System.Windows.Forms.TextBox tbPassword;
         private System.Windows.Forms.Label labeLogin;
         private System.Windows.Forms.Label labelPassword;
+        private System.Windows.Forms.Label lblTryAgain;
     }
 }
 
